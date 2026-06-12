@@ -1,0 +1,40 @@
+{
+  "name": "Lead Intake and Qualification Automation",
+  "description": "This workflow captures new leads, summarizes their needs, qualifies them, stores the record, and sends a personalized follow-up email.",
+  "version": "portfolio-sanitized-template",
+  "nodes": [
+    {
+      "name": "Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "notes": "Replace with your real trigger node, such as Airtable Trigger, Webhook, Gmail Trigger, or Form Trigger."
+    },
+    {
+      "name": "Business Logic / IF Conditions",
+      "type": "n8n-nodes-base.if",
+      "notes": "Add your actual conditional logic here. Keep sensitive values removed."
+    },
+    {
+      "name": "OpenAI / AI Processing",
+      "type": "n8n-nodes-base.openAi",
+      "notes": "Use placeholders for credentials. Example: {{OPENAI_API_KEY}}"
+    },
+    {
+      "name": "Action Node",
+      "type": "n8n-nodes-base.gmail",
+      "notes": "Replace with your real action node. Remove private email addresses and credentials."
+    },
+    {
+      "name": "Update Source Record",
+      "type": "n8n-nodes-base.airtable",
+      "notes": "Use placeholders such as {{AIRTABLE_BASE_ID}} and {{AIRTABLE_TABLE_ID}}."
+    }
+  ],
+  "credentials_notice": "Do not upload real n8n credentials, API keys, OAuth tokens, webhook production URLs, customer emails, or private base IDs.",
+  "required_environment_variables": [
+    "OPENAI_API_KEY",
+    "AIRTABLE_BASE_ID",
+    "AIRTABLE_TABLE_ID",
+    "GMAIL_CREDENTIAL",
+    "WEBHOOK_URL"
+  ]
+}

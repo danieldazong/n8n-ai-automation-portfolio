@@ -1,0 +1,4 @@
+Order Number,Customer Name,Email,Product,Quantity,Order Total,Status,Confirmation Email Sent,Shipping Email Sent,Delivery Email Sent
+ORD-1001,Sarah Johnson,sarah@example.com,Wireless Keyboard,1,$49.00,In Progress,false,false,false
+ORD-1002,Michael Brown,michael@example.com,Standing Desk,1,$299.00,Shipped,true,false,false
+ORD-1003,Amina Walker,amina@example.com,Office Chair,2,$398.00,Delivered,true,true,false
