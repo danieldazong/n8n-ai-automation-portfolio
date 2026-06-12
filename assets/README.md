@@ -1,6 +1,6 @@
 # Assets
 
-Use this folder for shared portfolio assets such as:
+This folder is for shared portfolio assets such as:
 
 - Logo
 - Cover image
