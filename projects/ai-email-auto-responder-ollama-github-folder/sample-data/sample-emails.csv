@@ -1,0 +1,5 @@
+from,subject,text,expected_category
+sarah@example.com,Question about my order,"Hi, can you confirm when my order will ship?",QUESTION
+michael@example.com,Urgent issue with account access,I cannot access my account and need help immediately.,URGENT
+feedback@example.com,Feedback on your service,I really liked the fast response from your team.,FEEDBACK
+promo@example.com,You won a prize,Click this suspicious link to claim your reward.,SPAM
