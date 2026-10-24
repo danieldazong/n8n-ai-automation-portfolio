@@ -1,105 +1,75 @@
-```markdown
-# n8n AI Business Automation Portfolio
+# n8n AI Automation Portfolio
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Status: Production](https://img.shields.io/badge/Status-Production-success.svg)
 
-A centralized repository showcasing production-ready n8n workflows, intelligent AI agent chains, and business process automations. Designed to demonstrate end-to-end operational efficiency, CRM synchronization, customer support pipelines, and intelligent data routing without exposing proprietary logic or sensitive credentials.
+A comprehensive, production-grade collection of advanced n8n workflows, intelligent AI agents, and automated data pipelines designed to streamline complex business processes, integrate disparate SaaS APIs, and leverage Large Language Models at scale.
 
-
-
-## 🔗 Live Demo
-- **Live Demo / Architecture:** [Insert Live URL Here, e.g., https://yourdomain.com/automations]
-- **Deployment Platform:** [n8n Cloud / Self-Hosted Docker / Railway / VPS]
-
-
+## 🔗 Live Demo & Resources
+- **Portfolio Showcase:** [Insert Portfolio URL Here, e.g., https://yourdomain.com]
+- **n8n Instance / Documentation:** [Insert Instance URL or Docs]
 
 ## 📌 Project Overview
-This repository contains production-grade n8n workflow blueprints, webhook handlers, and integration architectures designed to eliminate manual business bottlenecks. The objective of this project is to provide project managers, operations leads, and clients with a modular reference for scalable AI agent integration, bidirectional data syncs, and resilient workflow automation.
+This repository serves as a centralized hub showcasing robust automation architectures built using n8n and modern AI frameworks. Designed for reliability, error handling, and high throughput, these workflows demonstrate advanced capabilities in automated data processing, conversational agents, and multi-service integrations.
 
 ### Key Highlights
-- **AI Agent Integration:** Automated triage, lead qualification, and context-aware natural language routing using LLM chains.
-- **Enterprise Tool Sync:** Bidirectional pipelines connecting webhooks, CRMs (HubSpot, Airtable), databases (Supabase, PostgreSQL), and communication channels (Slack, Email).
-- **Resilient Execution:** Standardized error handling, retry policies, and automated alerting across all execution triggers.
-- **Zero-Trust Security:** Strict decoupling of workflow JSON blueprints from operational secrets, API tokens, and access keys.
-
-
+- **Intelligent Agent Workflows:** Modular chains leveraging LLMs for automated sentiment analysis, customer support triage, and data enrichment.
+- **Robust Error Handling:** Built-in try/catch error sub-workflows, alerting mechanisms, and state management across complex API calls.
+- **Seamless Integrations:** Custom HTTP requests, webhook triggers, database syncs (PostgreSQL, Supabase, Airtable), and CRM automations.
+- **Scalable Architecture:** Optimized node structures designed for high-performance execution and minimal latency.
 
 ## 🛠 Tech Stack
 
 | Category | Technology |
 | :--- | :--- |
-| **Automation Platform** | n8n (Self-Hosted / Cloud) |
-| **AI & LLM Services** | OpenAI API, Anthropic Claude, LangChain Nodes |
-| **Databases & CRM** | Supabase, PostgreSQL, Airtable, HubSpot |
-| **Messaging & Alerts** | Slack Webhooks, Discord API, Resend / SMTP |
-| **Hosting & DevOps** | Docker, Docker Compose, Linux VPS |
+| **Automation Engine** | n8n (Self-Hosted / Cloud) |
+| **AI & LLMs** | OpenAI API, Anthropic Claude, LangChain concepts |
+| **Databases & Storage** | PostgreSQL, Supabase, Airtable |
+| **APIs & Webhooks** | REST APIs, GraphQL, Webhook Triggers |
 | **Version Control** | Git & GitHub |
-
-
 
 ## 📁 Repository Structure
 
-```text
-├── workflows/        # Sanitized n8n workflow JSON blueprints (lead-gen, support, sync)
-├── credentials/      # Example credential structure templates (no real keys)
-├── scripts/          # Custom JavaScript / Python data transform nodes
-├── docker-compose.yml# Container orchestration file for self-hosted deployment
-├── .env.example      # Environment variable template for sensitive secrets
-├── README.md         # Project documentation and setup guidelines
-└── package.json      # Workspace dependencies and utility scripts
-
-```
+├── workflows/       # Exported JSON workflow templates
+├── credentials/     # Credential templates and setup guidelines (no live secrets)
+├── scripts/         # Helper scripts, testing utilities, and data transformers
+├── docs/            # Architecture diagrams and workflow documentation
+├── README.md        # Project documentation and setup guidelines
+└── package.json     # Project dependencies and configuration metadata
 
 ## 🚀 Getting Started
 
-Follow these instructions to run a copy of the project locally for development or testing purposes.
+Follow these instructions to import and run these workflows in your own n8n instance.
 
 ### Prerequisites
 
-* A modern web browser (Chrome, Edge, Firefox, Safari)
-* [Git](https://git-scm.com/) installed on your local machine
-* [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) installed (for running n8n locally)
+- An active [n8n](https://n8n.io/) instance (v1.0.0 or later recommended)
+- API keys for required services (OpenAI, Slack, Airtable, etc.)
+- [Git](https://git-scm.com/) installed on your local machine
 
 ### Installation & Local Setup
 
 1. **Clone the repository:**
 
-```bash
-git clone [https://github.com/danieldazong/n8n-ai-business-automation-portfolio.git](https://github.com/danieldazong/n8n-ai-business-automation-portfolio.git)
-cd n8n-ai-business-automation-portfolio
+git clone https://github.com/danieldazong/n8n-ai-automation-portfolio.git
+cd n8n-ai-automation-portfolio
 
-```
 
-2. **Configure environment variables:**
+2. **Import Workflows into n8n:**
+   - Open your n8n dashboard.
+   - Navigate to **Workflows** -> **Import from File**.
+   - Select the desired `.json` workflow files located in the `workflows/` directory.
 
-```bash
-cp .env.example .env
+3. **Configure Credentials & Environment Variables:**
+   - Set up your API keys and credentials in n8n corresponding to each workflow's node requirements.
+   - Copy `.env.example` to `.env` and configure any necessary environment variables.
 
-```
-
-*(Populate `.env` with your own private API keys and credentials locally. Never commit `.env` to Git).*
-
-3. **Run the local development server:**
-
-```bash
-docker compose up -d
-
-```
-
-*Open your browser and navigate to `http://localhost:5678` to access the n8n canvas.*
-
-4. **Import workflows:**
-
-In your n8n workspace, navigate to **Workflows** -> **Import from File**, and select any workflow template from the `workflows/` directory.
+4. **Activate & Test:**
+   - Run a manual test execution or trigger the webhook endpoint to verify proper pipeline operation.
 
 ## 📬 Contact & Connect
 
-* **Developer:** Daniel Dazong
-* **LinkedIn:** https://www.linkedin.com/in/danieldazong
-* **GitHub:** https://github.com/danieldazong
-* **Email:** danieldazong08@gmail.com
-
-```
-
-```
+- **Developer:** Daniel Dazong
+- **LinkedIn:** https://www.linkedin.com/in/danieldazong
+- **GitHub:** https://github.com/danieldazong
+- **Email:** danieldazong08@gmail.com
