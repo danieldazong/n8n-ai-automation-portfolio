@@ -5,9 +5,7 @@
 
 A comprehensive, production-grade collection of advanced n8n workflows, intelligent AI agents, and automated data pipelines designed to streamline complex business processes, integrate disparate SaaS APIs, and leverage Large Language Models at scale.
 
-## 🔗 Live Demo & Resources
-- **Portfolio Showcase:** [Insert Portfolio URL Here, e.g., https://yourdomain.com]
-- **n8n Instance / Documentation:** [Insert Instance URL or Docs]
+
 
 ## 📌 Project Overview
 This repository serves as a centralized hub showcasing robust automation architectures built using n8n and modern AI frameworks. Designed for reliability, error handling, and high throughput, these workflows demonstrate advanced capabilities in automated data processing, conversational agents, and multi-service integrations.
